@@ -58,7 +58,7 @@ input{
     justify-content: space-around;
 }
 .resultado{
-    height: 350px;
+    height: 330px;
     width: 300px;
     box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
@@ -85,6 +85,7 @@ a{
     font-size: 12px;
     font-weight: bold;
     text-decoration: none;
+    vertical-align: bottom;
 }
 .left{
     width: 600px;

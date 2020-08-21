@@ -20,7 +20,10 @@ export class ItemService{
   getItems(): Observable<Item[]>{
     return this.httpClient.get<Item[]>(this.url)
     .pipe(retry(2),catchError(this.handleError))
-    console.log(this)
+  }
+  saveItem(item: Item): Observable<Item>{
+      return this.httpClient.post<Item>(this.url, JSON.stringify(item), this.httpOptions)
+      .pipe(retry(2), catchError(this.handleError))
   }
   
   handleError(error: HttpErrorResponse) {

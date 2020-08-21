@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -27,5 +28,11 @@ export class AppComponent {
       console.log(this.items)
     })
   }
+  saveItem(){
+    this.itemService.saveItem(this.item).subscribe(() => {
+ 
+    })
+  }
+
 
 }

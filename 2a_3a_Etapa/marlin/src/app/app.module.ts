@@ -5,10 +5,12 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ItemCreateComponent } from './components/item-create/item-create.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ItemCreateComponent
   ],
   imports: [
     BrowserModule,
